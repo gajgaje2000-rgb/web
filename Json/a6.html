@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ab {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body align="center">
+    <div id="Demo"></div>
+
+    <script>
+        let emp = {
+            "Name": "Amit",
+            "Photo": "https://wallpaperaccess.com/thumb/23507096.jpg"
+        }
+
+        document.getElementById("Demo").innerHTML = "<h2>" + emp.Name + " </h2><img src=' " + emp.Photo + "' alt='Not Loaded' height='200px' class='ab'>";
+    </script>
+</body>
+
+</html>

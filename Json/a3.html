@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body align="center">
+    <h2>Product List</h2>
+    <table border="1" align="center">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        <tbody id="table"></tbody>
+    </table>
+    <script>
+        let Product = [
+            { "Name": "Laptop", "Price": 100 },
+            { "Name": "Desktop", "Price": 90 }
+        ]
+
+        let rows = "";
+        Product.forEach(p => {
+            rows += "<tr><td>" + p.Name + "</td><td>" + p.Price + "</td></tr>";
+        });
+        document.getElementById("table").innerHTML = rows;
+    </script>
+</body>
+
+</html>
