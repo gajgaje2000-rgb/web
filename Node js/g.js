@@ -3,7 +3,7 @@ const fs = require('fs');
 
 http.createServer(function (req, res) {
 
-    fs.readFile('index.html', (err, data) => {
+    fs.readFile('g.html', (err, data) => {
 
         if (err) {
             res.writeHead(404, { 'Content-Type': 'text/plain' });
